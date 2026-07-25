@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MOGAL MOTOR GARAGE</title>
+
+<title>MOGAL MOTOR WORKS</title>
 
 <style>
 *{
@@ -14,7 +15,7 @@
 }
 
 body{
-    background: #000000;
+    background:#000000;
 }
 
 header{
@@ -61,20 +62,24 @@ header{
 .section{
     padding:50px 20px;
     text-align:center;
+    color:white;
 }
 
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    display:flex;
+    justify-content:center;
     gap:20px;
+    flex-wrap:wrap;
     margin-top:20px;
 }
 
 .card{
     background:white;
+    color:black;
     padding:20px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
+    width:250px;
 }
 
 .contact{
@@ -94,142 +99,366 @@ header{
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
+    z-index:1000;
+}
+
+.owner-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.owner-card{
+    text-align:center;
+}
+
+.owner-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #ddd;
+}
+
+.owner-card h3{
+    margin-top:10px;
+}
+
+.owner-card p{
+    margin-top:5px;
+}
+
+.garage-image{
+    width:100%;
+    max-width:600px;
+    border-radius:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.review-button{
+    padding:10px 20px;
+    background:#4285F4;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.maps-button{
+    padding:10px 20px;
+    background:#ff6b00;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.location-title{
+    text-align:center;
+    color:white;
+    margin:30px 0 15px;
+}
+
+.location-button{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.map{
+    width:100%;
+    height:350px;
+    border:0;
 }
 </style>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
-    <img src="logo.png" class="logo" alt="Logo">
-    <h1>MOGAL MOTOR GARAGE</h1>
+
+    <img src="logo.png" class="logo" alt="Mogal Motor Works Logo">
+
+    <h1>MOGAL MOTOR WORKS</h1>
+
     <p>Restoring Your Ride To Perfection</p>
+
 </header>
 
+
+<!-- HERO SECTION -->
 <section class="hero">
+
     <h1>Denting • Painting • Insurance Work</h1>
+
     <p>Professional Car Repair & Insurance Claim Assistance</p>
-<a href="tel:9016942705" class="btn">
-    <i class="fas fa-phone"></i> Call Now
-</a>
-<a href="mailto:udayrajkhachar125@gmail.com" class="btn">
-    <i class="fas fa-envelope"></i> Email Us
-</a>
-    <a href="https://wa.me/919016942705" target="_blank" class="btn">
-    <i class="fab fa-whatsapp"></i> WhatsApp
-</a>
-<a href="https://www.instagram.com/udayraj_khachar_official" target="_blank" class="btn">
-    <i class="fab fa-instagram"></i> Instagram
-<a href="https://wa.me/919016942705?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment" class="btn">
-    <i class="fas fa-calendar-check"></i> Book Appointment
-</a>
-    <a href="https://wa.me/919016942705?text=મને%20મારી%20કારનો%20Estimate%20જોઈએ%20છે." class="btn">
-    <i class="fas fa-calculator"></i> Get Free Estimate
-</a>
-<section class="section">
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
-        <div style="text-align: center;">
-            <h3 style="margin-bottom:10px;">Owner</h3>
-            <img src="owner1.png" alt="Udayrajbhai"
-                 style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #ddd;">
-            <h3 style="margin-top:10px;">ઉદયરાજભાઈ બી. ખાચર</h3>
-            <p style="margin-top:5px;">Udayrajbhai B. Khachar</p>
-        </div>
 
-        <div style="text-align: center;">
-            <h3 style="margin-bottom:10px;">Owner</h3>
-            <img src="owner2.png" alt="Raghuvirbhai"
-                 style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #ddd;">
-            <h3 style="margin-top:10px;">રઘુવિરભાઈ પી. બોરીચા</h3>
-            <p style="margin-top:5px;">Raghuvirbhai P. Boricha</p>
-        </div>
+    <!-- CALL NOW -->
+    <a href="tel:9016942705" class="btn">
 
-    </div>
-</section>
-</section>
-    <section class="section">
-    <h2>Our Garage</h2>
-<img src="garriage.jpg" alt="Mogal Motor Garriage" style="width:100%; max-width:600px; border-radius:15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-</section>
+        <i class="fas fa-phone"></i> Call Now
 
-<section class="section">
-    <h2>Our Services</h2>
-    <div class="services" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px;">
-        
-        <div style="background: white; padding: 20px; border-radius: 10px; border: 1px solid #ccc; width: 200px; text-align: center; color: black;">
-            <h3>Denting</h3>
-            <p>Professional work.</p>
-        </div>
-
-        <div style="background: white; padding: 20px; border-radius: 10px; border: 1px solid #ccc; width: 200px; text-align: center; color: black;">
-            <h3>Painting</h3>
-            <p>Quality finishing.</p>
-        </div>
-
-        <div style="background: white; padding: 20px; border-radius: 10px; border: 1px solid #ccc; width: 200px; text-align: center; color: black;">
-            <h3>Insurance</h3>
-            <p>Claim support.</p>
-        </div>
-
-    </div>
-</section>
-
-    </div>
-</section>
-
-        <div class="card">
-            <h3>Insurance Claim Work</h3>
-            <p>Fast and easy insurance assistance.</p>
-        </div>
-
-        <div class="card">
-            <h3>Accident Repair</h3>
-            <p>Complete accident vehicle restoration.</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="contact">
-    <h2>Contact Us</h2>
-    <br>
-    <p>📞 9016942705</p>
-    <br>
-    <p>📍 ત્રીકોણી ખોડીયાર, પાળીયાદ રોડ, બોટાદ - 364710</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/919016942705">
-WhatsApp
-</a>
-    
-    
     </a>
-</div>
-<h2 style="text-align:center;">Our Location</h2>
-<div style="text-align:center;">
-<a href="https://maps.app.goo.gl/FvsZKcsEwYmQnzEY6" target="_blank">
-<button style="padding:10px 20px;background:#4285F4;color:white;border:none;border-radius:5px;">
-⭐ Review Us On Google
-</button>
+
+
+    <!-- EMAIL -->
+    <a href="mailto:udayrajkhachar125@gmail.com" class="btn">
+
+        <i class="fas fa-envelope"></i> Email Us
+
+    </a>
+
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/919016942705" target="_blank" class="btn">
+
+        <i class="fab fa-whatsapp"></i> WhatsApp
+
+    </a>
+
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/udayraj_khachar_official" target="_blank" class="btn">
+
+        <i class="fab fa-instagram"></i> Instagram
+
+    </a>
+
+
+    <!-- BOOK APPOINTMENT -->
+    <a href="https://wa.me/919016942705?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" class="btn">
+
+        <i class="fas fa-calendar-check"></i> Book Appointment
+
+    </a>
+
+
+    <!-- GET FREE ESTIMATE -->
+    <a href="https://wa.me/919016942705?text=મને%20મારી%20કારનો%20Estimate%20જોઈએ%20છે." target="_blank" class="btn">
+
+        <i class="fas fa-calculator"></i> Get Free Estimate
+
+    </a>
+
+</section>
+
+
+<!-- OWNERS SECTION -->
+<section class="section">
+
+    <div class="owner-container">
+
+
+        <!-- OWNER 1 -->
+        <div class="owner-card">
+
+            <h3>Owner</h3>
+
+            <img src="owner1.png" alt="Udayrajbhai">
+
+            <h3>ઉદયરાજભાઈ બી. ખાચર</h3>
+
+            <p>Udayrajbhai B. Khachar</p>
+
+        </div>
+
+
+        <!-- OWNER 2 -->
+        <div class="owner-card">
+
+            <h3>Owner</h3>
+
+            <img src="owner2.png" alt="Raghuvirbhai">
+
+            <h3>રઘુવિરભાઈ પી. બોરીચા</h3>
+
+            <p>Raghuvirbhai P. Boricha</p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- GARAGE PHOTO SECTION -->
+<section class="section">
+
+    <h2>Our Garage</h2>
+
+    <br>
+
+    <img
+        src="garriage.jpg"
+        alt="Mogal Motor Works"
+        class="garage-image"
+    >
+
+</section>
+
+
+<!-- SERVICES SECTION -->
+<section class="section">
+
+    <h2>Our Services</h2>
+
+
+    <div class="services">
+
+
+        <!-- DENTING -->
+        <div class="card">
+
+            <h3>Denting</h3>
+
+            <p>Professional work.</p>
+
+        </div>
+
+
+        <!-- PAINTING -->
+        <div class="card">
+
+            <h3>Painting</h3>
+
+            <p>Quality finishing.</p>
+
+        </div>
+
+
+        <!-- INSURANCE -->
+        <div class="card">
+
+            <h3>Insurance</h3>
+
+            <p>Claim support.</p>
+
+        </div>
+
+
+        <!-- INSURANCE CLAIM -->
+        <div class="card">
+
+            <h3>Insurance Claim Work</h3>
+
+            <p>Fast and easy insurance assistance.</p>
+
+        </div>
+
+
+        <!-- ACCIDENT REPAIR -->
+        <div class="card">
+
+            <h3>Accident Repair</h3>
+
+            <p>Complete accident vehicle restoration.</p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+
+    <h2>Contact Us</h2>
+
+    <br>
+
+    <p>📞 9016942705</p>
+
+    <br>
+
+    <p>📍 ત્રીકોણી ખોડીયાર, પાળીયાદ રોડ, બોટાદ - 364710</p>
+
+</section>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a
+    class="whatsapp"
+    href="https://wa.me/919016942705"
+    target="_blank"
+>
+
+    <i class="fab fa-whatsapp"></i> WhatsApp
+
 </a>
+
+
+<!-- GOOGLE REVIEW SECTION -->
+<h2 class="location-title">
+
+    Our Location
+
+</h2>
+
+
+<div class="location-button">
+
+
+    <a
+        href="https://maps.app.goo.gl/FvsZKcsEwYmQnzEY6"
+        target="_blank"
+    >
+
+        <button class="review-button">
+
+            ⭐ Review Us On Google
+
+        </button>
+
+    </a>
+
+
 </div>
+
+
+<!-- GOOGLE MAP -->
 <iframe
-src="https://www.google.com/maps?q=Mogal+Motor+Garriage&output=embed"
-width="100%"
-height="350"
-style="border:0;"
-loading="lazy">
+
+    src="https://www.google.com/maps?q=Mogal+Motor+Works&output=embed"
+
+    class="map"
+
+    loading="lazy">
+
 </iframe>
+
 
 <br><br>
 
-<div style="text-align:center;">
-<a href="https://maps.app.goo.gl/FvsZKcsEwYmQnzEY6" target="_blank">
-<button style="padding:10px 20px;background:#ff6b00;color:white;border:none;border-radius:5px;">
-View on Google Maps
-</button>
-</a>
+
+<!-- VIEW ON GOOGLE MAPS BUTTON -->
+<div class="location-button">
+
+
+    <a
+        href="https://maps.app.goo.gl/FvsZKcsEwYmQnzEY6"
+        target="_blank"
+    >
+
+        <button class="maps-button">
+
+            View on Google Maps
+
+        </button>
+
+    </a>
+
+
 </div>
+
+
 </body>
+
 </html>
